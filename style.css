@@ -1,0 +1,128 @@
+/*.parent{
+    width: 400px;
+    height: 400px;
+    background-color: gainsboro;
+    margin: 50px;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.child{
+    width: 300px;
+    height: 300px;
+    background-color: aqua;
+ transform:translate(120px);
+transition: 2s;
+    
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-image-width: auto;
+    border-top-color:red; 
+}
+.child:hover{
+    width: 300px;
+    height: 300px;
+    background-color: aqua;
+ 
+    transform:rotateX(180deg);
+    transform: rotateY(180deg);
+    transform: rotateZ(180deg);
+}
+
+
+
+.parent{
+    margin: 40px auto;
+    width: 200px;
+}
+
+.box{
+    position: relative;
+    background-color: antiquewhite;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  transform-style: preserve-3d;
+    
+   
+}
+.face{position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+   margin: 10px;
+    backface-visibility: hidden;
+      transition: 3s;
+}
+
+.back{
+  
+
+}
+.back:hover{transform:skew(180deg);
+
+}*/
+.parent{
+    width:100px;
+    height: 100px;
+    margin: 40px auto;
+    background-color: transparent;
+    border: 20px solid red;
+    border-radius: 50%;
+    border-top-left-radius: 1px;
+    border-bottom-right-radius: 1px;
+    transform:rotate(0deg);
+    animation-duration: 5s;
+    animation-name: spin;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: spin, c-color;
+    display: inline-block
+}
+@keyframes spin{
+    from{ transform:rotate(0deg);}
+     to{ transform:rotate(360deg);}
+    
+    
+}
+@keyframes c-color{
+    10%{background-color: transparent;;}
+    20%{ background-color: red;}
+     30%{ background-color: greenyellow;}
+     40%{ background-color: green;}
+    60%{ background-color: yellowgreen;}
+     70%{ background-color: yellow;}
+     80%{ background-color: blueviolet;}
+     100%{ background-color: skyblue;}
+    
+    
+}
+p{line-height: 1.4rem}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
